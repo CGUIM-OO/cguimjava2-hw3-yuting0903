@@ -1,7 +1,7 @@
 
 public class Card {
 
-		 	enum Suit{Club,Diamond,Heart,Spade};
+		 	enum Suit{Club,Diamond,Heart,Spade};//把樸克牌的花色用enum列出
 			//Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
 			private int rank; //1~13
 			Suit suit;
@@ -13,7 +13,7 @@ public class Card {
 			public void printCard(){
 				//Hint: print (System.out.println) card as suit,rank, for example: print 1,1 as Clubs Ace
 				System.out.print(getSuit().name());	
-				if(rank==1)
+				if(rank==1)//設定rank
 						System.out.println(" A");
 					else if(rank==2)
 						System.out.println(" 2");
@@ -43,11 +43,11 @@ public class Card {
 					}
 				
 			public Suit getSuit(){
-					return suit;
+					return suit;//取得花色
 				
 			}
 			public int getRank(){
-				return rank;
+				return rank;//取得牌號
 			}
 		}
 	
